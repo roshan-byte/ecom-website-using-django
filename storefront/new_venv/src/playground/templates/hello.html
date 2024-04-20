@@ -2,16 +2,20 @@
     <title> new website </title>
 
 <body>
-{% if name %}
-<h1>
-    Hello {{name}}
-</h1>
+    <ul>
+{% for p in product %}
+<li>
+     {{p}} -------------> {{p.unit_price}} 
 
-{% else %}
+     </li>
+
+     {% endfor %}
+<ul>
+
+
 
 <h1>Hello world</h1>
 
-{% endif %}
 
 </body>
 
